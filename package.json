@@ -1,23 +1,25 @@
 {
-  "name": "kikoeru-quasar",
-  "version": "0.6.2",
+  "name": "kikitoru-quasar",
+  "version": "1.0.0",
   "description": "A self-hosted web media player for listening to your DLsite voice works.",
-  "homepage": "https://github.com/kikoeru-project/kikoeru-quasar",
-  "productName": "Kikoeru",
-  "cordovaId": "org.cordova.quasar.kikoeru",
+  "homepage": "https://github.com/xzsk2/kikitoru-quasar",
+  "productName": "kikitoru",
+  "cordovaId": "org.cordova.quasar.kikitoru",
   "capacitorId": "",
   "author": "Watanuki-Kimihiro",
   "contributors": [
     "yodhcn",
-    "umonaca <mw2010a@gmail.com>"
+    "umonaca <mw2010a@gmail.com>",
+    "sakari"
   ],
   "repository": {
     "type": "git",
-    "url": "git@github.com:kikoeru-project/kikoeru-quasar.git"
+    "url": "git@github.com:xzsk2/kikitoru-quasar.git"
   },
   "license": "GPL-3.0-only",
   "keywords": [
-    "kikoeru"
+    "kikoeru",
+    "kikitoru"
   ],
   "scripts": {
     "test": "node_modules/.bin/eslint ."
