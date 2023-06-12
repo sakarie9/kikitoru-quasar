@@ -138,6 +138,11 @@ export default {
           sort: 'desc'
         },
         {
+          label: '按照加入数据库日期新到老的顺序',
+          order: 'create_date',
+          sort: 'desc'
+        },
+        {
           label: '按照我的评价排序',
           order: 'rating',
           sort: 'desc'
@@ -145,6 +150,11 @@ export default {
         {
           label: '按照发售日期老到新的顺序',
           order: 'release',
+          sort: 'asc'
+        },
+        {
+          label: '按照加入数据库日期老到新的顺序',
+          order: 'create_date',
           sort: 'asc'
         },
         {
