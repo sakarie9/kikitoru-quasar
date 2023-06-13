@@ -52,7 +52,7 @@ jobs:
 
       - name: Create Gzips for release
         if: startsWith(github.ref, 'refs/tags/')
-        run: cd dist/ && tar -czvf spa-${GITHUB_REF##*/}.tar.gz spa/ && tar -czvf pwa-${GITHUB_REF##*/}.tar.gz pwa/
+        run: cd dist/ && zip spa.zip spa/ && zip pwa.zip pwa/
 
       - name: Release
         uses: softprops/action-gh-release@v1
@@ -60,7 +60,7 @@ jobs:
         with:
           draft: true
           files: |
-            dist/spa-${{ steps.source_name.outputs.SOURCE_NAME }}.tar.gz
-            dist/pwa-${{ steps.source_name.outputs.SOURCE_NAME }}.tar.gz
+            dist/spa.zip
+            dist/pwa.zip
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
